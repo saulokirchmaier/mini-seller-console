@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "lead-001",
+    "name": "John Smith",
+    "company": "Tech Solutions Inc",
+    "email": "john.smith@techsolutions.com",
+    "source": "Website",
+    "score": 85,
+    "status": "new"
+  },
+  {
+    "id": "lead-002",
+    "name": "Mary Johnson",
+    "company": "Digital Innovation Ltd",
+    "email": "mary@digitalinnovation.com",
+    "source": "Referral",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-003",
+    "name": "Charles Miller",
+    "company": "Quick Constructions",
+    "email": "charles@quickconstructions.com",
+    "source": "LinkedIn",
+    "score": 67,
+    "status": "converted"
+  },
+  {
+    "id": "lead-004",
+    "name": "Anna Peterson",
+    "company": "Financial Consulting Group",
+    "email": "anna.peterson@finconsult.com",
+    "source": "Event",
+    "score": 78,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-005",
+    "name": "Robert Sanders",
+    "company": "Express Logistics",
+    "email": "robert@expresslogistics.com",
+    "source": "Website",
+    "score": 75,
+    "status": "new"
+  },
+  {
+    "id": "lead-006",
+    "name": "Fiona Lewis",
+    "company": "Online Education",
+    "email": "fiona@onlineeducation.org",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "converted"
+  },
+  {
+    "id": "lead-007",
+    "name": "Paul Rodriguez",
+    "company": "Integral Health",
+    "email": "paul@integralhealth.med",
+    "source": "Event",
+    "score": 72,
+    "status": "new"
+  },
+  {
+    "id": "lead-008",
+    "name": "Lucy Carter",
+    "company": "Modern Architecture",
+    "email": "lucy@modernarchitecture.arch",
+    "source": "Referral",
+    "score": 81,
+    "status": "new"
+  },
+  {
+    "id": "lead-009",
+    "name": "Richard Allen",
+    "company": "Digital Security",
+    "email": "richard@digitalsecurity.com",
+    "source": "Website",
+    "score": 94,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-010",
+    "name": "Camila Foster",
+    "company": "Strategic Marketing",
+    "email": "camila@strategicmarketing.com",
+    "source": "LinkedIn",
+    "score": 76,
+    "status": "converted"
+  },
+  {
+    "id": "lead-011",
+    "name": "Edward Martin",
+    "company": "Efficient Transport",
+    "email": "edward@efficienttransport.com",
+    "source": "Event",
+    "score": 63,
+    "status": "new"
+  },
+  {
+    "id": "lead-012",
+    "name": "Betty Gordon",
+    "company": "Natural Foods",
+    "email": "betty@naturalfoods.com",
+    "source": "Website",
+    "score": 89,
+    "status": "new"
+  },
+  {
+    "id": "lead-013",
+    "name": "Mark Sullivan",
+    "company": "Advanced Technology",
+    "email": "mark@advancedtech.tech",
+    "source": "Referral",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-014",
+    "name": "Julia Rivers",
+    "company": "Sustainable Fashion",
+    "email": "julia@sustainablefashion.com",
+    "source": "LinkedIn",
+    "score": 77,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-015",
+    "name": "George Newman",
+    "company": "Renewable Energy",
+    "email": "george@renewableenergy.eco",
+    "source": "Event",
+    "score": 86,
+    "status": "new"
+  },
+  {
+    "id": "lead-016",
+    "name": "Patricia Lopez",
+    "company": "Legal Consulting",
+    "email": "patricia@legalconsulting.law",
+    "source": "Website",
+    "score": 82,
+    "status": "converted"
+  },
+  {
+    "id": "lead-017",
+    "name": "Henry Castle",
+    "company": "Software House",
+    "email": "henry@softwarehouse.dev",
+    "source": "Referral",
+    "score": 95,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-018",
+    "name": "Marian Day",
+    "company": "Eco Tourism",
+    "email": "marian@ecotourism.travel",
+    "source": "LinkedIn",
+    "score": 68,
+    "status": "new"
+  },
+  {
+    "id": "lead-019",
+    "name": "Philip Barrett",
+    "company": "Industrial Automation",
+    "email": "philip@industrialautomation.ind",
+    "source": "Event",
+    "score": 79,
+    "status": "new"
+  },
+  {
+    "id": "lead-020",
+    "name": "Alice Carson",
+    "company": "Corporate Education",
+    "email": "alice@corporateeducation.edu",
+    "source": "Website",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-021",
+    "name": "Ralph Morgan",
+    "company": "Sustainable Construction",
+    "email": "ralph@sustainableconstruction.build",
+    "source": "Referral",
+    "score": 73,
+    "status": "converted"
+  },
+  {
+    "id": "lead-022",
+    "name": "Danielle Vincent",
+    "company": "Visual Communication",
+    "email": "danielle@visualcommunication.design",
+    "source": "LinkedIn",
+    "score": 84,
+    "status": "new"
+  },
+  {
+    "id": "lead-023",
+    "name": "Lucas Taylor",
+    "company": "Financial Services",
+    "email": "lucas@financialservices.fin",
+    "source": "Event",
+    "score": 90,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-024",
+    "name": "Amanda Rock",
+    "company": "Organic Products",
+    "email": "amanda@organicproducts.eco",
+    "source": "Website",
+    "score": 75,
+    "status": "new"
+  },
+  {
+    "id": "lead-025",
+    "name": "Thomas Campbell",
+    "company": "IT Solutions",
+    "email": "thomas@itsolutions.tech",
+    "source": "Referral",
+    "score": 93,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-026",
+    "name": "Sarah Wilson",
+    "company": "Cloud Services",
+    "email": "sarah@cloudservices.tech",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "new"
+  },
+  {
+    "id": "lead-175",
+    "name": "Emily Wilson",
+    "company": "Smart Solutions",
+    "email": "emily@smartsolutions.com",
+    "source": "Website",
+    "score": 87,
+    "status": "new"
+  },
+  {
+    "id": "lead-176",
+    "name": "Daniel Harris",
+    "company": "Global Logistics",
+    "email": "daniel@globallogistics.com",
+    "source": "LinkedIn",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-177",
+    "name": "Sophia Martinez",
+    "company": "Creative Designs",
+    "email": "sophia@creativedesigns.com",
+    "source": "Event",
+    "score": 78,
+    "status": "converted"
+  },
+  {
+    "id": "lead-178",
+    "name": "Matthew Clark",
+    "company": "Tech Innovations",
+    "email": "matthew@techinnovations.com",
+    "source": "Referral",
+    "score": 85,
+    "status": "new"
+  },
+  {
+    "id": "lead-179",
+    "name": "Olivia Baker",
+    "company": "Digital Solutions",
+    "email": "olivia@digitalsolutions.com",
+    "source": "Website",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-180",
+    "name": "Ethan Wright",
+    "company": "Cloud Computing",
+    "email": "ethan@cloudcomputing.tech",
+    "source": "LinkedIn",
+    "score": 76,
+    "status": "new"
+  },
+  {
+    "id": "lead-181",
+    "name": "Ava Thompson",
+    "company": "Marketing Experts",
+    "email": "ava@marketingexperts.com",
+    "source": "Event",
+    "score": 83,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-182",
+    "name": "Noah Garcia",
+    "company": "Financial Advisors",
+    "email": "noah@financialadvisors.com",
+    "source": "Referral",
+    "score": 89,
+    "status": "converted"
+  },
+  {
+    "id": "lead-183",
+    "name": "Isabella Lee",
+    "company": "Health Services",
+    "email": "isabella@healthservices.com",
+    "source": "Website",
+    "score": 72,
+    "status": "new"
+  },
+  {
+    "id": "lead-184",
+    "name": "William Turner",
+    "company": "Software Development",
+    "email": "william@softwaredevelopment.com",
+    "source": "LinkedIn",
+    "score": 94,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-185",
+    "name": "Owen Price",
+    "company": "Robotic Process Automation",
+    "email": "owen@rpa.tech",
+    "source": "Website",
+    "score": 89,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-186",
+    "name": "Audrey Bennett",
+    "company": "Sustainable Development",
+    "email": "audrey@sustainabledevelopment.org",
+    "source": "LinkedIn",
+    "score": 73,
+    "status": "new"
+  },
+  {
+    "id": "lead-187",
+    "name": "Leo Gray",
+    "company": "DevOps Solutions",
+    "email": "leo@devops.tech",
+    "source": "Website",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-188",
+    "name": "Stella Hughes",
+    "company": "Digital Advertising",
+    "email": "stella@digitaladvertising.com",
+    "source": "Website",
+    "score": 81,
+    "status": "converted"
+  },
+  {
+    "id": "lead-189",
+    "name": "Elijah Russell",
+    "company": "Fintech Solutions",
+    "email": "elijah@fintech.fin",
+    "source": "Event",
+    "score": 86,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-200",
+    "name": "Elijah Adams",
+    "company": "Security Systems",
+    "email": "elijah@securitysystems.com",
+    "source": "Referral",
+    "score": 90,
+    "status": "converted"
+  },
+  {
+    "id": "lead-191",
+    "name": "Caleb Foster",
+    "company": "Blockchain Technology",
+    "email": "caleb@blockchain.tech",
+    "source": "LinkedIn",
+    "score": 95,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-192",
+    "name": "Hazel Barnes",
+    "company": "User Experience Research",
+    "email": "hazel@uxresearch.design",
+    "source": "Website",
+    "score": 79,
+    "status": "converted"
+  },
+  {
+    "id": "lead-193",
+    "name": "Wyatt Coleman",
+    "company": "Internet of Things",
+    "email": "wyatt@iot.tech",
+    "source": "Event",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-194",
+    "name": "Violet Perry",
+    "company": "Digital Marketing",
+    "email": "violet@digitalmarketing.com",
+    "source": "LinkedIn",
+    "score": 74,
+    "status": "new"
+  },
+  {
+    "id": "lead-195",
+    "name": "Grayson Powell",
+    "company": "Machine Learning",
+    "email": "grayson@machinelearning.ai",
+    "source": "Website",
+    "score": 93,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-171",
+    "name": "Henry Allen",
+    "company": "Manufacturing Solutions",
+    "email": "henry@manufacturingsolutions.com",
+    "source": "LinkedIn",
+    "score": 80,
+    "status": "new"
+  },
+  {
+    "id": "lead-172",
+    "name": "Scarlett Lewis",
+    "company": "Education Technology",
+    "email": "scarlett@edtech.com",
+    "source": "Event",
+    "score": 87,
+    "status": "converted"
+  },
+  {
+    "id": "lead-173",
+    "name": "Sebastian Walker",
+    "company": "Automotive Services",
+    "email": "sebastian@automotiveservices.com",
+    "source": "Referral",
+    "score": 74,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-174",
+    "name": "Victoria Morris",
+    "company": "Data Analytics",
+    "email": "victoria@dataanalytics.com",
+    "source": "Website",
+    "score": 91,
+    "status": "new"
+  },
+  {
+    "id": "lead-126",
+    "name": "Michael Brown",
+    "company": "Data Analytics",
+    "email": "michael@dataanalytics.com",
+    "source": "Event",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-127",
+    "name": "Jennifer Davis",
+    "company": "Healthcare Solutions",
+    "email": "jennifer@healthcaresolutions.med",
+    "source": "Event",
+    "score": 79,
+    "status": "converted"
+  },
+  {
+    "id": "lead-128",
+    "name": "David Wilson",
+    "company": "E-commerce Platform",
+    "email": "david@ecommerceplatform.com",
+    "source": "Website",
+    "score": 85,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-129",
+    "name": "Elizabeth Green",
+    "company": "Sustainable Packaging",
+    "email": "elizabeth@sustainablepackaging.eco",
+    "source": "Event",
+    "score": 76,
+    "status": "new"
+  },
+  {
+    "id": "lead-130",
+    "name": "William Turner",
+    "company": "Mobile Applications",
+    "email": "william@mobileapps.dev",
+    "source": "Website",
+    "score": 94,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-131",
+    "name": "Olivia Parker",
+    "company": "Digital Marketing",
+    "email": "olivia@digitalmarketing.com",
+    "source": "Website",
+    "score": 82,
+    "status": "converted"
+  },
+  {
+    "id": "lead-132",
+    "name": "James Harrison",
+    "company": "Cybersecurity Services",
+    "email": "james@cybersecurity.tech",
+    "source": "Website",
+    "score": 89,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-133",
+    "name": "Sophia Martinez",
+    "company": "Content Creation",
+    "email": "sophia@contentcreation.media",
+    "source": "LinkedIn",
+    "score": 77,
+    "status": "new"
+  },
+  {
+    "id": "lead-134",
+    "name": "Benjamin Cooper",
+    "company": "Artificial Intelligence",
+    "email": "benjamin@artificialintelligence.ai",
+    "source": "Event",
+    "score": 96,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-135",
+    "name": "Emma Watson",
+    "company": "Educational Technology",
+    "email": "emma@edtech.edu",
+    "source": "LinkedIn",
+    "score": 83,
+    "status": "converted"
+  },
+  {
+    "id": "lead-136",
+    "name": "Alexander Wright",
+    "company": "Renewable Resources",
+    "email": "alexander@renewableresources.eco",
+    "source": "Event",
+    "score": 71,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-137",
+    "name": "Charlotte King",
+    "company": "User Experience Design",
+    "email": "charlotte@uxdesign.design",
+    "source": "Website",
+    "score": 88,
+    "status": "new"
+  },
+  {
+    "id": "lead-138",
+    "name": "Daniel Lee",
+    "company": "Supply Chain Solutions",
+    "email": "daniel@supplychainsolutions.com",
+    "source": "Event",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-139",
+    "name": "Amelia Clark",
+    "company": "Virtual Reality",
+    "email": "amelia@virtualreality.tech",
+    "source": "Website",
+    "score": 86,
+    "status": "converted"
+  },
+  {
+    "id": "lead-140",
+    "name": "Matthew Adams",
+    "company": "Business Intelligence",
+    "email": "matthew@businessintelligence.com",
+    "source": "Website",
+    "score": 79,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-141",
+    "name": "Harper Scott",
+    "company": "Sustainable Agriculture",
+    "email": "harper@sustainableagriculture.org",
+    "source": "Website",
+    "score": 74,
+    "status": "new"
+  },
+  {
+    "id": "lead-142",
+    "name": "Sebastian Hill",
+    "company": "Blockchain Technology",
+    "email": "sebastian@blockchain.tech",
+    "source": "Event",
+    "score": 95,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-143",
+    "name": "Victoria Baker",
+    "company": "Customer Relationship Management",
+    "email": "victoria@crm.com",
+    "source": "Website",
+    "score": 81,
+    "status": "converted"
+  },
+  {
+    "id": "lead-144",
+    "name": "Joseph Young",
+    "company": "Internet of Things",
+    "email": "joseph@iot.tech",
+    "source": "LinkedIn",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-145",
+    "name": "Abigail Morris",
+    "company": "Augmented Reality",
+    "email": "abigail@augmentedreality.tech",
+    "source": "LinkedIn",
+    "score": 78,
+    "status": "new"
+  },
+  {
+    "id": "lead-146",
+    "name": "Christopher Nelson",
+    "company": "Machine Learning",
+    "email": "christopher@machinelearning.ai",
+    "source": "Event",
+    "score": 93,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-147",
+    "name": "Grace Carter",
+    "company": "Project Management",
+    "email": "grace@projectmanagement.com",
+    "source": "Event",
+    "score": 84,
+    "status": "converted"
+  },
+  {
+    "id": "lead-148",
+    "name": "Andrew Phillips",
+    "company": "Cloud Computing",
+    "email": "andrew@cloudcomputing.tech",
+    "source": "Website",
+    "score": 90,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-149",
+    "name": "Chloe Evans",
+    "company": "Digital Transformation",
+    "email": "chloe@digitaltransformation.com",
+    "source": "Website",
+    "score": 75,
+    "status": "new"
+  },
+  {
+    "id": "lead-150",
+    "name": "Ethan Mitchell",
+    "company": "Big Data Analytics",
+    "email": "ethan@bigdata.tech",
+    "source": "Event",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-151",
+    "name": "Zoe Roberts",
+    "company": "Sustainable Energy",
+    "email": "zoe@sustainableenergy.eco",
+    "source": "Website",
+    "score": 83,
+    "status": "converted"
+  },
+  {
+    "id": "lead-152",
+    "name": "Nathan Cook",
+    "company": "Software as a Service",
+    "email": "nathan@saas.tech",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-153",
+    "name": "Lily Morgan",
+    "company": "User Interface Design",
+    "email": "lily@uidesign.design",
+    "source": "Website",
+    "score": 76,
+    "status": "new"
+  },
+  {
+    "id": "lead-154",
+    "name": "Ryan Bailey",
+    "company": "Network Security",
+    "email": "ryan@networksecurity.tech",
+    "source": "Event",
+    "score": 94,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-155",
+    "name": "Hannah Cooper",
+    "company": "E-learning Platform",
+    "email": "hannah@elearning.edu",
+    "source": "Website",
+    "score": 80,
+    "status": "converted"
+  },
+  {
+    "id": "lead-156",
+    "name": "Samuel Reed",
+    "company": "Data Visualization",
+    "email": "samuel@datavisualization.com",
+    "source": "Event",
+    "score": 85,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-157",
+    "name": "Mia Richardson",
+    "company": "Mobile Development",
+    "email": "mia@mobiledevelopment.dev",
+    "source": "LinkedIn",
+    "score": 77,
+    "status": "new"
+  },
+  {
+    "id": "lead-158",
+    "name": "Jack Watson",
+    "company": "Quantum Computing",
+    "email": "jack@quantumcomputing.tech",
+    "source": "Website",
+    "score": 97,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-159",
+    "name": "Scarlett Brooks",
+    "company": "Content Management",
+    "email": "scarlett@contentmanagement.com",
+    "source": "Event",
+    "score": 82,
+    "status": "converted"
+  },
+  {
+    "id": "lead-160",
+    "name": "Owen Price",
+    "company": "Robotic Process Automation",
+    "email": "owen@rpa.tech",
+    "source": "Website",
+    "score": 89,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-161",
+    "name": "Audrey Bennett",
+    "company": "Sustainable Development",
+    "email": "audrey@sustainabledevelopment.org",
+    "source": "LinkedIn",
+    "score": 73,
+    "status": "new"
+  },
+  {
+    "id": "lead-162",
+    "name": "Leo Gray",
+    "company": "DevOps Solutions",
+    "email": "leo@devops.tech",
+    "source": "Website",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-163",
+    "name": "Stella Hughes",
+    "company": "Digital Advertising",
+    "email": "stella@digitaladvertising.com",
+    "source": "Website",
+    "score": 81,
+    "status": "converted"
+  },
+  {
+    "id": "lead-164",
+    "name": "Elijah Russell",
+    "company": "Fintech Solutions",
+    "email": "elijah@fintech.fin",
+    "source": "Event",
+    "score": 86,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-190",
+    "name": "Nora Wood",
+    "company": "Agile Development",
+    "email": "nora@agiledevelopment.dev",
+    "source": "Event",
+    "score": 78,
+    "status": "new"
+  },
+  {
+    "id": "lead-201",
+    "name": "Caleb Stewart",
+    "company": "Microservices Architecture",
+    "email": "caleb@microservices.tech",
+    "source": "Event",
+    "score": 95,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-202",
+    "name": "Penelope Sanders",
+    "company": "Product Management",
+    "email": "penelope@productmanagement.com",
+    "source": "Website",
+    "score": 84,
+    "status": "converted"
+  },
+  {
+    "id": "lead-203",
+    "name": "Miles Foster",
+    "company": "Green Technology",
+    "email": "miles@greentech.eco",
+    "source": "LinkedIn",
+    "score": 79,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-204",
+    "name": "Hazel Powell",
+    "company": "API Integration",
+    "email": "hazel@apiintegration.tech",
+    "source": "Website",
+    "score": 87,
+    "status": "new"
+  },
+  {
+    "id": "lead-205",
+    "name": "Liam Jenkins",
+    "company": "Enterprise Software",
+    "email": "liam@enterprisesoftware.com",
+    "source": "Website",
+    "score": 93,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-196",
+    "name": "Violet Butler",
+    "company": "Sustainable Logistics",
+    "email": "violet@sustainablelogistics.com",
+    "source": "LinkedIn",
+    "score": 80,
+    "status": "converted"
+  },
+  {
+    "id": "lead-197",
+    "name": "Wyatt Simmons",
+    "company": "Serverless Computing",
+    "email": "wyatt@serverless.tech",
+    "source": "Event",
+    "score": 88,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-198",
+    "name": "Claire Barnes",
+    "company": "Digital Health",
+    "email": "claire@digitalhealth.med",
+    "source": "Website",
+    "score": 75,
+    "status": "new"
+  },
+  {
+    "id": "lead-199",
+    "name": "Grayson Coleman",
+    "company": "Continuous Integration",
+    "email": "grayson@ci.dev",
+    "source": "Website",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-206",
+    "name": "Paisley Henderson",
+    "company": "Marketing Automation",
+    "email": "paisley@marketingautomation.com",
+    "source": "Event",
+    "score": 83,
+    "status": "converted"
+  },
+  {
+    "id": "lead-207",
+    "name": "Hudson Perry",
+    "company": "Clean Energy",
+    "email": "hudson@cleanenergy.eco",
+    "source": "Website",
+    "score": 89,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-208",
+    "name": "Ruby Long",
+    "company": "Frontend Development",
+    "email": "ruby@frontend.dev",
+    "source": "Event",
+    "score": 76,
+    "status": "new"
+  },
+  {
+    "id": "lead-209",
+    "name": "Lincoln Hayes",
+    "company": "Data Privacy",
+    "email": "lincoln@dataprivacy.tech",
+    "source": "LinkedIn",
+    "score": 94,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-080",
+    "name": "Willow Fisher",
+    "company": "Business Process Management",
+    "email": "willow@bpm.com",
+    "source": "Website",
+    "score": 82,
+    "status": "converted"
+  },
+  {
+    "id": "lead-081",
+    "name": "Ezra Reynolds",
+    "company": "Smart Cities",
+    "email": "ezra@smartcities.tech",
+    "source": "LinkedIn",
+    "score": 87,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-082",
+    "name": "Delilah Warren",
+    "company": "Backend Development",
+    "email": "delilah@backend.dev",
+    "source": "Website",
+    "score": 79,
+    "status": "new"
+  },
+  {
+    "id": "lead-083",
+    "name": "Silas Ferguson",
+    "company": "Predictive Analytics",
+    "email": "silas@predictiveanalytics.com",
+    "source": "Event",
+    "score": 96,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-084",
+    "name": "Naomi Wallace",
+    "company": "Sustainable Manufacturing",
+    "email": "naomi@sustainablemanufacturing.org",
+    "source": "Website",
+    "score": 81,
+    "status": "converted"
+  },
+  {
+    "id": "lead-085",
+    "name": "Felix Daniels",
+    "company": "Containerization",
+    "email": "felix@containerization.tech",
+    "source": "Event",
+    "score": 85,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-086",
+    "name": "Iris Stephens",
+    "company": "Digital Workplace",
+    "email": "iris@digitalworkplace.com",
+    "source": "Website",
+    "score": 77,
+    "status": "new"
+  },
+  {
+    "id": "lead-087",
+    "name": "Jasper Gardner",
+    "company": "Edge Computing",
+    "email": "jasper@edgecomputing.tech",
+    "source": "Event",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-088",
+    "name": "Juniper Tate",
+    "company": "Customer Experience",
+    "email": "juniper@customerexperience.com",
+    "source": "LinkedIn",
+    "score": 84,
+    "status": "converted"
+  },
+  {
+    "id": "lead-089",
+    "name": "Kai Hale",
+    "company": "Circular Economy",
+    "email": "kai@circulareconomy.eco",
+    "source": "Website",
+    "score": 78,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-090",
+    "name": "Lyla Benson",
+    "company": "Test Automation",
+    "email": "lyla@testautomation.dev",
+    "source": "Website",
+    "score": 86,
+    "status": "new"
+  },
+  {
+    "id": "lead-091",
+    "name": "Milo Harmon",
+    "company": "Digital Banking",
+    "email": "milo@digitalbanking.fin",
+    "source": "LinkedIn",
+    "score": 95,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-092",
+    "name": "Nova Garrett",
+    "company": "Agile Coaching",
+    "email": "nova@agilecoaching.com",
+    "source": "Event",
+    "score": 83,
+    "status": "converted"
+  },
+  {
+    "id": "lead-093",
+    "name": "Oscar Larson",
+    "company": "Sustainable Water",
+    "email": "oscar@sustainablewater.eco",
+    "source": "Website",
+    "score": 80,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-094",
+    "name": "Piper Frost",
+    "company": "Infrastructure as Code",
+    "email": "piper@iac.tech",
+    "source": "Event",
+    "score": 75,
+    "status": "new"
+  },
+  {
+    "id": "lead-095",
+    "name": "Quinn Barber",
+    "company": "Digital Consulting",
+    "email": "quinn@digitalconsulting.com",
+    "source": "Website",
+    "score": 90,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-096",
+    "name": "Rowan Mcintyre",
+    "company": "Sustainable Fashion",
+    "email": "rowan@sustainablefashion.eco",
+    "source": "Event",
+    "score": 82,
+    "status": "converted"
+  },
+  {
+    "id": "lead-097",
+    "name": "Sage Hodges",
+    "company": "Cloud Security",
+    "email": "sage@cloudsecurity.tech",
+    "source": "Website",
+    "score": 88,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-098",
+    "name": "Tatum Goodwin",
+    "company": "Mobile UX Design",
+    "email": "tatum@mobileuxdesign.design",
+    "source": "LinkedIn",
+    "score": 79,
+    "status": "new"
+  },
+  {
+    "id": "lead-099",
+    "name": "Uriah Mcguire",
+    "company": "Data Engineering",
+    "email": "uriah@dataengineering.tech",
+    "source": "Website",
+    "score": 93,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-100",
+    "name": "Vivian Hurst",
+    "company": "Digital Learning",
+    "email": "vivian@digitallearning.edu",
+    "source": "LinkedIn",
+    "score": 85,
+    "status": "converted"
+  },
+  {
+    "id": "lead-101",
+    "name": "Weston Robles",
+    "company": "Sustainable Tourism",
+    "email": "weston@sustainabletourism.travel",
+    "source": "Event",
+    "score": 81,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-102",
+    "name": "Xander Odom",
+    "company": "Full Stack Development",
+    "email": "xander@fullstack.dev",
+    "source": "Website",
+    "score": 78,
+    "status": "new"
+  },
+  {
+    "id": "lead-103",
+    "name": "Yara Stout",
+    "company": "Biometric Security",
+    "email": "yara@biometricsecurity.tech",
+    "source": "Event",
+    "score": 94,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-104",
+    "name": "Zion Blevins",
+    "company": "Product Design",
+    "email": "zion@productdesign.design",
+    "source": "Website",
+    "score": 87,
+    "status": "converted"
+  },
+  {
+    "id": "lead-105",
+    "name": "Adalyn Hogan",
+    "company": "Renewable Materials",
+    "email": "adalyn@renewablematerials.eco",
+    "source": "Event",
+    "score": 76,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-106",
+    "name": "Bowen Maddox",
+    "company": "Continuous Deployment",
+    "email": "bowen@cd.dev",
+    "source": "Website",
+    "score": 89,
+    "status": "new"
+  },
+  {
+    "id": "lead-107",
+    "name": "Colette Pugh",
+    "company": "Enterprise Architecture",
+    "email": "colette@enterprisearchitecture.tech",
+    "source": "Website",
+    "score": 91,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-108",
+    "name": "Dexter Hines",
+    "company": "Digital Strategy",
+    "email": "dexter@digitalstrategy.com",
+    "source": "LinkedIn",
+    "score": 83,
+    "status": "converted"
+  },
+  {
+    "id": "lead-109",
+    "name": "Emery Blackwell",
+    "company": "Sustainable Retail",
+    "email": "emery@sustainableretail.eco",
+    "source": "LinkedIn",
+    "score": 79,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-110",
+    "name": "Fiona Gentry",
+    "company": "Microservices Development",
+    "email": "fiona@microservices.dev",
+    "source": "Event",
+    "score": 85,
+    "status": "new"
+  },
+  {
+    "id": "lead-111",
+    "name": "Gideon Merritt",
+    "company": "Customer Data Platform",
+    "email": "gideon@cdp.tech",
+    "source": "Website",
+    "score": 92,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-112",
+    "name": "Harlow Dickerson",
+    "company": "Agile Transformation",
+    "email": "harlow@agiletransformation.com",
+    "source": "Event",
+    "score": 84,
+    "status": "converted"
+  },
+  {
+    "id": "lead-113",
+    "name": "Iker Mcclain",
+    "company": "Green Building",
+    "email": "iker@greenbuilding.eco",
+    "source": "Website",
+    "score": 77,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-114",
+    "name": "Jovie Hendricks",
+    "company": "API Management",
+    "email": "jovie@apimanagement.tech",
+    "source": "Website",
+    "score": 80,
+    "status": "new"
+  },
+  {
+    "id": "lead-115",
+    "name": "Koa Wilkinson",
+    "company": "Digital Innovation",
+    "email": "koa@digitalinnovation.com",
+    "source": "Event",
+    "score": 95,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-116",
+    "name": "Lennox Carrillo",
+    "company": "User Research",
+    "email": "lennox@userresearch.design",
+    "source": "Website",
+    "score": 82,
+    "status": "converted"
+  },
+  {
+    "id": "lead-117",
+    "name": "Marlowe Bray",
+    "company": "Sustainable Transportation",
+    "email": "marlowe@sustainabletransportation.eco",
+    "source": "LinkedIn",
+    "score": 88,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-118",
+    "name": "Nico Donovan",
+    "company": "Software Testing",
+    "email": "nico@softwaretesting.dev",
+    "source": "LinkedIn",
+    "score": 75,
+    "status": "new"
+  },
+  {
+    "id": "lead-119",
+    "name": "Oakley Melendez",
+    "company": "Data Governance",
+    "email": "oakley@datagovernance.tech",
+    "source": "Event",
+    "score": 90,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-120",
+    "name": "Phoenix Winters",
+    "company": "Digital Experience",
+    "email": "phoenix@digitalexperience.com",
+    "source": "Website",
+    "score": 86,
+    "status": "converted"
+  },
+  {
+    "id": "lead-121",
+    "name": "Quincy Howe",
+    "company": "Sustainable Packaging",
+    "email": "quincy@sustainablepackaging.eco",
+    "source": "Event",
+    "score": 79,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-122",
+    "name": "Remington Keller",
+    "company": "Cloud Migration",
+    "email": "remington@cloudmigration.tech",
+    "source": "Website",
+    "score": 83,
+    "status": "new"
+  },
+  {
+    "id": "lead-123",
+    "name": "Sutton Farley",
+    "company": "Business Analytics",
+    "email": "sutton@businessanalytics.com",
+    "source": "Website",
+    "score": 93,
+    "status": "contacted"
+  },
+  {
+    "id": "lead-124",
+    "name": "Tatum Mcpherson",
+    "company": "Agile Project Management",
+    "email": "tatum@agilepm.com",
+    "source": "Event",
+    "score": 81,
+    "status": "converted"
+  },
+  {
+    "id": "lead-125",
+    "name": "Wilder Buchanan",
+    "company": "Sustainable Waste Management",
+    "email": "wilder@sustainablewaste.eco",
+    "source": "Website",
+    "score": 78,
+    "status": "contacted"
+  }
+]
