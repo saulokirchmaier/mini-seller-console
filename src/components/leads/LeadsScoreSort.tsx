@@ -16,10 +16,10 @@ export const LeadsScoreSort = () => {
   };
 
   return (
-    <div className="flex items-center gap-2 m-2">
+    <div className="flex items-center gap-2">
       <span className="text-sm text-muted-foreground">Score:</span>
       <Select value={scoreSort} onValueChange={handleSortChange}>
-        <SelectTrigger className="w-[120px]">
+        <SelectTrigger className="w-full">
           <SelectValue placeholder="Sort by score" />
         </SelectTrigger>
         <SelectContent>

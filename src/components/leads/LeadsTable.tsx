@@ -36,51 +36,53 @@ export const LeadsTable = () => {
   const paginatedLeads = filteredLeads.slice(startIndex, endIndex);
 
   return (
-    <div className="w-full min-w-[1000px] overflow-auto">
-      <div className="mb-4 flex flex-wrap items-center justify-between">
+    <div className="w-full">
+      <div className="mb-4 flex flex-col md:flex-row items-start sm:items-center md:justify-between gap-2 p-2 md:px-4">
         <LeadsSearch />
-        <div className="flex flex-wrap items-center">
+        <div className="flex flex-col md:flex-row items-center justify-center self-center gap-2">
           <LeadsStatusFilter />
           <LeadsScoreSort />
         </div>
       </div>
-      <Table>
-        <TableHeader>
-          <TableRow>
-            <TableHead>Name</TableHead>
-            <TableHead>Company</TableHead>
-            <TableHead>Email</TableHead>
-            <TableHead>Source</TableHead>
-            <TableHead>Score</TableHead>
-            <TableHead>Status</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {paginatedLeads.map(lead => (
-            <TableRow key={lead.id}>
-              <TableCell>{lead.name}</TableCell>
-              <TableCell>{lead.company}</TableCell>
-              <TableCell>{lead.email}</TableCell>
-              <TableCell>{lead.source}</TableCell>
-              <TableCell>{lead.score}</TableCell>
-              <TableCell>
-                <span
-                  className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${
-                    lead.status === 'new'
-                      ? 'bg-blue-100 text-blue-800'
-                      : lead.status === 'contacted'
-                        ? 'bg-yellow-100 text-yellow-800'
-                        : 'bg-green-100 text-green-800'
-                  }`}
-                >
-                  {lead.status.charAt(0).toUpperCase() + lead.status.slice(1)}
-                </span>
-              </TableCell>
+      <div className="w-[100%] p-2 md:px-4 overflow-y-auto mx-auto">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Name</TableHead>
+              <TableHead>Company</TableHead>
+              <TableHead>Email</TableHead>
+              <TableHead>Source</TableHead>
+              <TableHead>Score</TableHead>
+              <TableHead>Status</TableHead>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <div className="flex justify-between items-center mt-4">
+          </TableHeader>
+          <TableBody>
+            {paginatedLeads.map(lead => (
+              <TableRow key={lead.id} onClick={() => console.log('click')}>
+                <TableCell>{lead.name}</TableCell>
+                <TableCell>{lead.company}</TableCell>
+                <TableCell>{lead.email}</TableCell>
+                <TableCell>{lead.source}</TableCell>
+                <TableCell>{lead.score}</TableCell>
+                <TableCell>
+                  <span
+                    className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${
+                      lead.status === 'new'
+                        ? 'bg-blue-100 text-blue-800'
+                        : lead.status === 'contacted'
+                          ? 'bg-yellow-100 text-yellow-800'
+                          : 'bg-green-100 text-green-800'
+                    }`}
+                  >
+                    {lead.status.charAt(0).toUpperCase() + lead.status.slice(1)}
+                  </span>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+      <div className="flex justify-center md:justify-between items-center flex-wrap mt-4">
         <LeadsPerPageSelect />
         <LeadsPagination totalItems={filteredLeads.length} />
       </div>

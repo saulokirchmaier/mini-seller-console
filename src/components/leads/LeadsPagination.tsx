@@ -28,6 +28,7 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
   const getPageNumbers = () => {
     const pages = [];
 
+    // Para desktop
     if (totalPages <= 7) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -63,6 +64,11 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
     return pages;
   };
 
+  // Função separada para obter apenas a página atual para mobile
+  const getCurrentPageOnly = () => {
+    return [page];
+  };
+
   return (
     <Pagination className="m-2 w-fit">
       <PaginationContent>
@@ -75,29 +81,43 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
           />
         </PaginationItem>
 
-        {getPageNumbers().map((pageNum, index) => {
-          if (pageNum === 'ellipsis') {
-            return (
-              <PaginationItem key={`ellipsis-${index}`}>
-                <span className="flex h-9 w-9 items-center justify-center">
-                  ...
-                </span>
-              </PaginationItem>
-            );
-          }
-
-          return (
+        {/* Versão mobile - mostra apenas a página atual */}
+        <div className="sm:hidden">
+          {getCurrentPageOnly().map(pageNum => (
             <PaginationItem key={pageNum}>
-              <PaginationLink
-                isActive={page === pageNum}
-                onClick={() => handlePageChange(pageNum as number)}
-                className="cursor-pointer"
-              >
+              <PaginationLink isActive={true} className="cursor-pointer">
                 {pageNum}
               </PaginationLink>
             </PaginationItem>
-          );
-        })}
+          ))}
+        </div>
+
+        {/* Versão desktop - mostra paginação completa */}
+        <div className="hidden sm:flex">
+          {getPageNumbers().map((pageNum, index) => {
+            if (pageNum === 'ellipsis') {
+              return (
+                <PaginationItem key={`ellipsis-${index}`}>
+                  <span className="flex h-9 w-9 items-center justify-center">
+                    ...
+                  </span>
+                </PaginationItem>
+              );
+            }
+
+            return (
+              <PaginationItem key={pageNum}>
+                <PaginationLink
+                  isActive={page === pageNum}
+                  onClick={() => handlePageChange(pageNum as number)}
+                  className="cursor-pointer"
+                >
+                  {pageNum}
+                </PaginationLink>
+              </PaginationItem>
+            );
+          })}
+        </div>
 
         <PaginationItem>
           <PaginationNext

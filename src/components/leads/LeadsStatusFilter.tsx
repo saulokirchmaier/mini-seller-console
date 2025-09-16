@@ -16,10 +16,10 @@ export const LeadsStatusFilter = () => {
   };
 
   return (
-    <div className="flex items-center gap-2 m-2">
+    <div className="flex items-center gap-2">
       <span className="text-sm text-muted-foreground">Status:</span>
       <Select value={statusFilter} onValueChange={handleStatusChange}>
-        <SelectTrigger className="w-[120px]">
+        <SelectTrigger className="w-full">
           <SelectValue placeholder="All" />
         </SelectTrigger>
         <SelectContent>
