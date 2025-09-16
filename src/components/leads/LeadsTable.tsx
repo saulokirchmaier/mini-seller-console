@@ -10,9 +10,10 @@ import {
 } from '../ui/table';
 import { LeadsPagination } from './LeadsPagination';
 import { LeadsPerPageSelect } from './LeadsPerPageSelect';
+import { LeadsSearch } from './LeadsSearch';
 
 export const LeadsTable = () => {
-  const { leads, loading, error } = useLeads();
+  const { leads, filteredLeads, loading, error } = useLeads();
   const { pagination } = useConfig();
   const { page, limit } = pagination;
 
@@ -28,13 +29,15 @@ export const LeadsTable = () => {
     return <div className="p-4 text-center">No leads found.</div>;
   }
 
-  // Aplicar paginação
   const startIndex = (page - 1) * limit;
   const endIndex = startIndex + limit;
-  const paginatedLeads = leads.slice(startIndex, endIndex);
+  const paginatedLeads = filteredLeads.slice(startIndex, endIndex);
 
   return (
-    <div className="w-full overflow-auto">
+    <div className="w-full min-w-[1000px] overflow-auto">
+      <div className="mb-4">
+        <LeadsSearch />
+      </div>
       <Table>
         <TableHeader>
           <TableRow>
@@ -73,7 +76,7 @@ export const LeadsTable = () => {
       </Table>
       <div className="flex justify-between items-center mt-4">
         <LeadsPerPageSelect />
-        <LeadsPagination totalItems={leads.length} />
+        <LeadsPagination totalItems={filteredLeads.length} />
       </div>
     </div>
   );

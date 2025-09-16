@@ -39,11 +39,13 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
         pages.push('ellipsis');
       }
 
-      if (page > 1) {
+      if (page > 2) {
         pages.push(page - 1);
       }
 
-      pages.push(page);
+      if (page !== 1) {
+        pages.push(page);
+      }
 
       if (page < totalPages) {
         pages.push(page + 1);
@@ -53,7 +55,7 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
         pages.push('ellipsis');
       }
 
-      if (page < totalPages - 1) {
+      if (page < totalPages) {
         pages.push(totalPages);
       }
     }
