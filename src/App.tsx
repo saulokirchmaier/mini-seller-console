@@ -2,6 +2,7 @@ import './App.css';
 import { LeadsProvider } from './contexts/LeadsContext';
 import { ConfigProvider } from './contexts/ConfigContext';
 import { LeadsTable } from './components/leads/LeadsTable';
+import { LeadDrawer } from './components/leads/LeadDrawer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <h2 className="text-xl md:text-2xl font-semibold mb-4">Leads</h2>
             <LeadsTable />
           </div>
+          <LeadDrawer />
         </div>
       </LeadsProvider>
     </ConfigProvider>

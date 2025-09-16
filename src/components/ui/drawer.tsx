@@ -4,9 +4,14 @@ import { Drawer as DrawerPrimitive } from 'vaul';
 import { cn } from '@/lib/utils';
 
 function Drawer({
+  direction = 'bottom',
   ...props
-}: React.ComponentProps<typeof DrawerPrimitive.Root>) {
-  return <DrawerPrimitive.Root data-slot="drawer" {...props} />;
+}: React.ComponentProps<typeof DrawerPrimitive.Root> & {
+  direction?: 'top' | 'bottom' | 'left' | 'right';
+}) {
+  return (
+    <DrawerPrimitive.Root data-slot="drawer" direction={direction} {...props} />
+  );
 }
 
 function DrawerTrigger({

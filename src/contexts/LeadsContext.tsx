@@ -9,6 +9,9 @@ interface LeadsContextType {
   error: string | null;
   search: string;
   updateSearch: (search: string) => void;
+  selectedLead: Lead | null;
+  setSelectedLead: (lead: Lead | null) => void;
+  updateLead: (updatedLead: Lead) => Promise<boolean>;
 }
 
 const LeadsContext = createContext<LeadsContextType | undefined>(undefined);
@@ -18,6 +21,7 @@ export const LeadsProvider = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState('');
+  const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
 
   useEffect(() => {
     const fetchLeads = async () => {
@@ -81,6 +85,25 @@ export const LeadsProvider = ({ children }: { children: React.ReactNode }) => {
     setSearch(newSearch);
   };
 
+  const updateLead = async (updatedLead: Lead): Promise<boolean> => {
+    try {
+      // Update local state
+      const updatedLeads = leads.map(lead =>
+        lead.id === updatedLead.id ? updatedLead : lead
+      );
+      setLeads(updatedLeads);
+
+      if (selectedLead && selectedLead.id === updatedLead.id) {
+        setSelectedLead(updatedLead);
+      }
+
+      return true;
+    } catch (error) {
+      console.error('Erro ao atualizar lead:', error);
+      return false;
+    }
+  };
+
   return (
     <LeadsContext.Provider
       value={{
@@ -90,6 +113,9 @@ export const LeadsProvider = ({ children }: { children: React.ReactNode }) => {
         error,
         search,
         updateSearch,
+        selectedLead,
+        setSelectedLead,
+        updateLead,
       }}
     >
       {children}

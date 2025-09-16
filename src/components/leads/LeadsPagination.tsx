@@ -28,7 +28,6 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
   const getPageNumbers = () => {
     const pages = [];
 
-    // Para desktop
     if (totalPages <= 7) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -64,7 +63,6 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
     return pages;
   };
 
-  // Função separada para obter apenas a página atual para mobile
   const getCurrentPageOnly = () => {
     return [page];
   };
@@ -81,7 +79,7 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
           />
         </PaginationItem>
 
-        {/* Versão mobile - mostra apenas a página atual */}
+        {/* Mobile */}
         <div className="sm:hidden">
           {getCurrentPageOnly().map(pageNum => (
             <PaginationItem key={pageNum}>
@@ -92,7 +90,7 @@ export const LeadsPagination = ({ totalItems }: LeadsPaginationProps) => {
           ))}
         </div>
 
-        {/* Versão desktop - mostra paginação completa */}
+        {/* Desktop */}
         <div className="hidden sm:flex">
           {getPageNumbers().map((pageNum, index) => {
             if (pageNum === 'ellipsis') {

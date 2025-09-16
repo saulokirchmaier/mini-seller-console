@@ -15,7 +15,7 @@ import { LeadsStatusFilter } from './LeadsStatusFilter';
 import { LeadsScoreSort } from './LeadsScoreSort';
 
 export const LeadsTable = () => {
-  const { leads, filteredLeads, loading, error } = useLeads();
+  const { leads, filteredLeads, loading, error, setSelectedLead } = useLeads();
   const { pagination } = useConfig();
   const { page, limit } = pagination;
 
@@ -58,7 +58,11 @@ export const LeadsTable = () => {
           </TableHeader>
           <TableBody>
             {paginatedLeads.map(lead => (
-              <TableRow key={lead.id} onClick={() => console.log('click')}>
+              <TableRow
+                key={lead.id}
+                onClick={() => setSelectedLead(lead)}
+                className="cursor-pointer"
+              >
                 <TableCell>{lead.name}</TableCell>
                 <TableCell>{lead.company}</TableCell>
                 <TableCell>{lead.email}</TableCell>
