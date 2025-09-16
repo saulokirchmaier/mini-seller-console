@@ -11,6 +11,8 @@ import {
 import { LeadsPagination } from './LeadsPagination';
 import { LeadsPerPageSelect } from './LeadsPerPageSelect';
 import { LeadsSearch } from './LeadsSearch';
+import { LeadsStatusFilter } from './LeadsStatusFilter';
+import { LeadsScoreSort } from './LeadsScoreSort';
 
 export const LeadsTable = () => {
   const { leads, filteredLeads, loading, error } = useLeads();
@@ -35,8 +37,12 @@ export const LeadsTable = () => {
 
   return (
     <div className="w-full min-w-[1000px] overflow-auto">
-      <div className="mb-4">
+      <div className="mb-4 flex flex-wrap items-center justify-between">
         <LeadsSearch />
+        <div className="flex flex-wrap items-center">
+          <LeadsStatusFilter />
+          <LeadsScoreSort />
+        </div>
       </div>
       <Table>
         <TableHeader>
