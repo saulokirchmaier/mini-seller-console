@@ -1,7 +1,13 @@
 import { useConfig } from '../../contexts/ConfigContext';
 import { useOpportunities } from '../../contexts/OpportunitiesContext';
-import { Button } from '../ui/button';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from '../ui/pagination';
 
 export const OpportunitiesPagination = () => {
   const { pagination, updatePagination } = useConfig();
@@ -9,133 +15,118 @@ export const OpportunitiesPagination = () => {
 
   const totalItems = filteredOpportunities.length;
   const totalPages = Math.ceil(totalItems / pagination.limit);
-  const currentPage = pagination.page;
+  const page = pagination.page;
 
-  const handlePageChange = (page: number) => {
-    if (page < 1 || page > totalPages) return;
-    updatePagination({ ...pagination, page });
+  const handlePageChange = (newPage: number) => {
+    if (newPage < 1 || newPage > totalPages) return;
+    updatePagination({ ...pagination, page: newPage });
   };
 
-  // Generate page numbers to display
   const getPageNumbers = () => {
-    const pageNumbers = [];
-    const maxPagesToShow = 5;
+    const pages = [];
 
-    if (totalPages <= maxPagesToShow) {
-      // Show all pages if there are fewer than maxPagesToShow
+    if (totalPages <= 7) {
       for (let i = 1; i <= totalPages; i++) {
-        pageNumbers.push(i);
+        pages.push(i);
       }
     } else {
-      // Always include first page
-      pageNumbers.push(1);
+      pages.push(1);
 
-      // Calculate start and end of page range around current page
-      let startPage = Math.max(2, currentPage - 1);
-      let endPage = Math.min(totalPages - 1, currentPage + 1);
-
-      // Adjust if we're near the beginning
-      if (currentPage <= 3) {
-        endPage = Math.min(totalPages - 1, 4);
+      if (page > 3) {
+        pages.push('ellipsis');
       }
 
-      // Adjust if we're near the end
-      if (currentPage >= totalPages - 2) {
-        startPage = Math.max(2, totalPages - 3);
+      if (page > 2) {
+        pages.push(page - 1);
       }
 
-      // Add ellipsis after first page if needed
-      if (startPage > 2) {
-        pageNumbers.push('...');
+      if (page !== 1) {
+        pages.push(page);
       }
 
-      // Add middle pages
-      for (let i = startPage; i <= endPage; i++) {
-        pageNumbers.push(i);
+      if (page < totalPages) {
+        pages.push(page + 1);
       }
 
-      // Add ellipsis before last page if needed
-      if (endPage < totalPages - 1) {
-        pageNumbers.push('...');
+      if (page < totalPages - 2) {
+        pages.push('ellipsis');
       }
 
-      // Always include last page if there's more than one page
-      if (totalPages > 1) {
-        pageNumbers.push(totalPages);
+      if (page < totalPages) {
+        pages.push(totalPages);
       }
     }
 
-    return pageNumbers;
+    return pages;
   };
 
-  if (totalPages <= 1) return null;
+  const getCurrentPageOnly = () => {
+    return [page];
+  };
+
+  if (totalItems === 0 || totalPages <= 1) return null;
 
   return (
-    <div className="flex justify-center mt-4">
-      {/* Mobile pagination */}
-      <div className="flex items-center gap-2 md:hidden">
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          <ChevronLeft className="h-4 w-4" />
-        </Button>
-        <span className="text-sm">
-          Page {currentPage} of {totalPages}
-        </span>
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-        >
-          <ChevronRight className="h-4 w-4" />
-        </Button>
-      </div>
+    <Pagination className="m-2 w-fit">
+      <PaginationContent>
+        <PaginationItem>
+          <PaginationPrevious
+            onClick={() => handlePageChange(page - 1)}
+            className={
+              page === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'
+            }
+          />
+        </PaginationItem>
 
-      {/* Desktop pagination */}
-      <div className="hidden md:flex items-center gap-2">
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          <ChevronLeft className="h-4 w-4" />
-        </Button>
+        {/* Mobile */}
+        <div className="sm:hidden">
+          {getCurrentPageOnly().map(pageNum => (
+            <PaginationItem key={pageNum}>
+              <PaginationLink isActive={true} className="cursor-pointer">
+                {pageNum}
+              </PaginationLink>
+            </PaginationItem>
+          ))}
+        </div>
 
-        {getPageNumbers().map((page, index) => {
-          if (page === '...') {
+        {/* Desktop */}
+        <div className="hidden sm:flex">
+          {getPageNumbers().map((pageNum, index) => {
+            if (pageNum === 'ellipsis') {
+              return (
+                <PaginationItem key={`ellipsis-${index}`}>
+                  <span className="flex h-9 w-9 items-center justify-center">
+                    ...
+                  </span>
+                </PaginationItem>
+              );
+            }
+
             return (
-              <span key={`ellipsis-${index}`} className="px-2">
-                ...
-              </span>
+              <PaginationItem key={pageNum}>
+                <PaginationLink
+                  isActive={page === pageNum}
+                  onClick={() => handlePageChange(pageNum as number)}
+                  className="cursor-pointer"
+                >
+                  {pageNum}
+                </PaginationLink>
+              </PaginationItem>
             );
-          }
+          })}
+        </div>
 
-          return (
-            <Button
-              key={`page-${page}`}
-              variant={currentPage === page ? 'default' : 'outline'}
-              size="sm"
-              onClick={() => handlePageChange(page as number)}
-            >
-              {page}
-            </Button>
-          );
-        })}
-
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-        >
-          <ChevronRight className="h-4 w-4" />
-        </Button>
-      </div>
-    </div>
+        <PaginationItem>
+          <PaginationNext
+            onClick={() => handlePageChange(page + 1)}
+            className={
+              page === totalPages
+                ? 'pointer-events-none opacity-50'
+                : 'cursor-pointer'
+            }
+          />
+        </PaginationItem>
+      </PaginationContent>
+    </Pagination>
   );
 };
