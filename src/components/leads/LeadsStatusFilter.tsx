@@ -24,13 +24,9 @@ export const LeadsStatusFilter = () => {
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="all">All</SelectItem>
-          <SelectItem value={LeadStatus.NEW}>{LeadStatus.NEW}</SelectItem>
-          <SelectItem value={LeadStatus.CONTACTED}>
-            {LeadStatus.CONTACTED}
-          </SelectItem>
-          <SelectItem value={LeadStatus.CONVERTED}>
-            {LeadStatus.CONVERTED}
-          </SelectItem>
+          <SelectItem value={LeadStatus.NEW}>New</SelectItem>
+          <SelectItem value={LeadStatus.CONTACTED}>Contacted</SelectItem>
+          <SelectItem value={LeadStatus.INPROGRESS}>In Progress</SelectItem>
         </SelectContent>
       </Select>
     </div>

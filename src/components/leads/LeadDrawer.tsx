@@ -4,7 +4,6 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerTitle,
-  DrawerDescription,
   DrawerClose,
 } from '../ui/drawer';
 import { Button } from '../ui/button';
@@ -30,10 +29,11 @@ import {
   SelectValue,
 } from '../ui/select';
 import { LeadStatus } from '../../types/Lead';
+import { ConvertLeadDrawer } from '../opportunities/ConvertLeadDrawer';
 
 const leadFormSchema = z.object({
   email: z.email('Invalid email'),
-  status: z.enum(['new', 'contacted', 'converted']),
+  status: z.enum(['new', 'contacted', 'inProgress']),
 });
 
 type LeadFormValues = z.infer<typeof leadFormSchema>;
@@ -43,6 +43,7 @@ export const LeadDrawer = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState<boolean | null>(null);
+  const [isConvertDrawerOpen, setIsConvertDrawerOpen] = useState(false);
 
   const form = useForm<LeadFormValues>({
     resolver: zodResolver(leadFormSchema),
@@ -99,26 +100,33 @@ export const LeadDrawer = () => {
   };
 
   return (
-    <Drawer open={!!selectedLead} onOpenChange={closeDrawer} direction="bottom">
-      <DrawerContent className="inset-y-0">
-        <div className="h-full flex flex-col">
-          <DrawerHeader className="border-b">
-            <div className="flex items-center justify-between">
-              <DrawerTitle className="text-xl md:text-2xl font-bold text-center w-full">
-                {selectedLead?.name}
-              </DrawerTitle>
-              <DrawerClose asChild>
-                <Button variant="ghost" size="icon">
-                  <X className="h-4 w-4" />
-                </Button>
-              </DrawerClose>
-            </div>
-            <DrawerDescription className="flex flex-col gap-2">
+    <>
+      <Drawer
+        open={!!selectedLead}
+        onOpenChange={closeDrawer}
+        direction="bottom"
+      >
+        <DrawerContent>
+          <div className="flex flex-col">
+            <DrawerHeader className="border-b">
+              <div className="flex items-center justify-between">
+                <DrawerTitle className="text-xl md:text-2xl font-bold text-center w-full">
+                  {selectedLead?.name}
+                </DrawerTitle>
+                <DrawerClose asChild>
+                  <Button variant="ghost" size="icon">
+                    <X className="h-4 w-4" />
+                  </Button>
+                </DrawerClose>
+              </div>
+            </DrawerHeader>
+
+            <div className="flex flex-col gap-2 items-center m-2">
               <p className="text-md md:text-lg text-gray-700 font-bold">
                 {selectedLead?.company}
               </p>
               <div className="space-y-6">
-                <div className="grid grid-cols-2 gap-2">
+                <div className="flex justify-center gap-8">
                   <div className="space-y-1">
                     <p className="text-sm text-gray-600">Source</p>
                     <p className="font-medium text-gray-800">
@@ -134,7 +142,7 @@ export const LeadDrawer = () => {
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 w-full max-w-md mx-auto">
                 {isEditing ? (
                   <Form {...form}>
                     <form
@@ -185,8 +193,8 @@ export const LeadDrawer = () => {
                                     <SelectItem value={LeadStatus.CONTACTED}>
                                       Contacted
                                     </SelectItem>
-                                    <SelectItem value={LeadStatus.CONVERTED}>
-                                      Converted
+                                    <SelectItem value={LeadStatus.INPROGRESS}>
+                                      In Progress
                                     </SelectItem>
                                   </SelectContent>
                                 </Select>
@@ -223,7 +231,7 @@ export const LeadDrawer = () => {
                     </form>
                   </Form>
                 ) : (
-                  <div className="space-y-4">
+                  <div className="space-y-4 flex flex-col md:flex-row justify-center gap-4 md:gap-8">
                     <div className="space-y-2">
                       <p className="text-sm text-gray-600">Email</p>
                       <p className="font-medium text-gray-800">
@@ -237,7 +245,7 @@ export const LeadDrawer = () => {
                           ? 'New'
                           : selectedLead?.status === LeadStatus.CONTACTED
                             ? 'Contacted'
-                            : 'Converted'}
+                            : 'In Progress'}
                       </p>
                     </div>
                     <div className="flex justify-center">
@@ -259,10 +267,28 @@ export const LeadDrawer = () => {
                   </p>
                 )}
               </div>
-            </DrawerDescription>
-          </DrawerHeader>
-        </div>
-      </DrawerContent>
-    </Drawer>
+
+              <div className="m-4">
+                <Button
+                  className="bg-blue-800 text-white"
+                  onClick={() => {
+                    setIsConvertDrawerOpen(true);
+                  }}
+                >
+                  Convert Lead
+                </Button>
+              </div>
+            </div>
+          </div>
+        </DrawerContent>
+      </Drawer>
+      <ConvertLeadDrawer
+        isOpen={isConvertDrawerOpen}
+        onClose={() => {
+          setIsConvertDrawerOpen(false);
+          setSelectedLead(null);
+        }}
+      />
+    </>
   );
 };

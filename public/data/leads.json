@@ -24,7 +24,7 @@
     "email": "charles@quickconstructions.com",
     "source": "LinkedIn",
     "score": 67,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-004",
@@ -51,7 +51,7 @@
     "email": "fiona@onlineeducation.org",
     "source": "LinkedIn",
     "score": 88,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-007",
@@ -87,7 +87,7 @@
     "email": "camila@strategicmarketing.com",
     "source": "LinkedIn",
     "score": 76,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-011",
@@ -141,7 +141,7 @@
     "email": "patricia@legalconsulting.law",
     "source": "Website",
     "score": 82,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-017",
@@ -186,7 +186,7 @@
     "email": "ralph@sustainableconstruction.build",
     "source": "Referral",
     "score": 73,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-022",
@@ -258,7 +258,7 @@
     "email": "sophia@creativedesigns.com",
     "source": "Event",
     "score": 78,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-178",
@@ -303,7 +303,7 @@
     "email": "noah@financialadvisors.com",
     "source": "Referral",
     "score": 89,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-183",
@@ -357,7 +357,7 @@
     "email": "stella@digitaladvertising.com",
     "source": "Website",
     "score": 81,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-189",
@@ -375,7 +375,7 @@
     "email": "elijah@securitysystems.com",
     "source": "Referral",
     "score": 90,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-191",
@@ -393,7 +393,7 @@
     "email": "hazel@uxresearch.design",
     "source": "Website",
     "score": 79,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-193",
@@ -438,7 +438,7 @@
     "email": "scarlett@edtech.com",
     "source": "Event",
     "score": 87,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-173",
@@ -474,7 +474,7 @@
     "email": "jennifer@healthcaresolutions.med",
     "source": "Event",
     "score": 79,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-128",
@@ -510,7 +510,7 @@
     "email": "olivia@digitalmarketing.com",
     "source": "Website",
     "score": 82,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-132",
@@ -546,7 +546,7 @@
     "email": "emma@edtech.edu",
     "source": "LinkedIn",
     "score": 83,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-136",
@@ -582,7 +582,7 @@
     "email": "amelia@virtualreality.tech",
     "source": "Website",
     "score": 86,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-140",
@@ -618,7 +618,7 @@
     "email": "victoria@crm.com",
     "source": "Website",
     "score": 81,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-144",
@@ -654,7 +654,7 @@
     "email": "grace@projectmanagement.com",
     "source": "Event",
     "score": 84,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-148",
@@ -690,7 +690,7 @@
     "email": "zoe@sustainableenergy.eco",
     "source": "Website",
     "score": 83,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-152",
@@ -726,7 +726,7 @@
     "email": "hannah@elearning.edu",
     "source": "Website",
     "score": 80,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-156",
@@ -762,7 +762,7 @@
     "email": "scarlett@contentmanagement.com",
     "source": "Event",
     "score": 82,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-160",
@@ -798,7 +798,7 @@
     "email": "stella@digitaladvertising.com",
     "source": "Website",
     "score": 81,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-164",
@@ -834,7 +834,7 @@
     "email": "penelope@productmanagement.com",
     "source": "Website",
     "score": 84,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-203",
@@ -870,7 +870,7 @@
     "email": "violet@sustainablelogistics.com",
     "source": "LinkedIn",
     "score": 80,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-197",
@@ -906,7 +906,7 @@
     "email": "paisley@marketingautomation.com",
     "source": "Event",
     "score": 83,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-207",
@@ -942,7 +942,7 @@
     "email": "willow@bpm.com",
     "source": "Website",
     "score": 82,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-081",
@@ -978,7 +978,7 @@
     "email": "naomi@sustainablemanufacturing.org",
     "source": "Website",
     "score": 81,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-085",
@@ -1014,7 +1014,7 @@
     "email": "juniper@customerexperience.com",
     "source": "LinkedIn",
     "score": 84,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-089",
@@ -1050,7 +1050,7 @@
     "email": "nova@agilecoaching.com",
     "source": "Event",
     "score": 83,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-093",
@@ -1086,7 +1086,7 @@
     "email": "rowan@sustainablefashion.eco",
     "source": "Event",
     "score": 82,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-097",
@@ -1122,7 +1122,7 @@
     "email": "vivian@digitallearning.edu",
     "source": "LinkedIn",
     "score": 85,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-101",
@@ -1158,7 +1158,7 @@
     "email": "zion@productdesign.design",
     "source": "Website",
     "score": 87,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-105",
@@ -1194,7 +1194,7 @@
     "email": "dexter@digitalstrategy.com",
     "source": "LinkedIn",
     "score": 83,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-109",
@@ -1230,7 +1230,7 @@
     "email": "harlow@agiletransformation.com",
     "source": "Event",
     "score": 84,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-113",
@@ -1266,7 +1266,7 @@
     "email": "lennox@userresearch.design",
     "source": "Website",
     "score": 82,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-117",
@@ -1302,7 +1302,7 @@
     "email": "phoenix@digitalexperience.com",
     "source": "Website",
     "score": 86,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-121",
@@ -1338,7 +1338,7 @@
     "email": "tatum@agilepm.com",
     "source": "Event",
     "score": 81,
-    "status": "converted"
+    "status": "inProgress"
   },
   {
     "id": "lead-125",

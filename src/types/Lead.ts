@@ -8,12 +8,12 @@ export interface Lead {
   status: LeadStatus;
 }
 
-export type LeadStatus = 'new' | 'contacted' | 'converted';
+export type LeadStatus = 'new' | 'contacted' | 'inProgress';
 
 export const LeadStatus = {
   NEW: 'new' as LeadStatus,
   CONTACTED: 'contacted' as LeadStatus,
-  CONVERTED: 'converted' as LeadStatus,
+  INPROGRESS: 'inProgress' as LeadStatus,
 };
 
 export interface LeadFilters {
